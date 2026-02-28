@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const printBtn = document.getElementById('print');
 
 	function formatCurrency(v) {
-		return new Intl.NumberFormat(undefined, { style: 'currency', currency: 'USD' }).format(v);
+		return new Intl.NumberFormat(undefined, { style: 'currency', currency: 'INR' }).format(v);
 	}
 
 	function createCell(tag, content) {
