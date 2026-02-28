@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice with Calculation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container" >
+    <table class="table">
+        <h1>Invoice With Calculation</h1>
+        <tbody>
+            <form action="">
+                <label for="">customer</label>
+                <input type="text" name="customerName" id="customer" placeholder="Enter the Customer Name"><br><br>
+                <label for="">Address</label>
+                <input type="text" name="Address" id="address" placeholder="Enter the Full Address"><br><br>
+                <label for="">city</label>
+                <input type="text" name="city" id="city" placeholder="city"><br><br>
+                <label for="">Invoice.No</label>
+                <input type="Number" name="city" id="Price" placeholder="city"><br><br>
+                <label for="">Date</label>
+                <input type="Date"  name="city" id="Date"><br><br>
+            </form>
+        </tbody>
+    </table>
+    <table cellspacing="3", border="2px">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Particular</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Amount</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button>Edit</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><button>Edit</button></td>
+        </tr>
+       </tbody>
+    </table>
+    <br>
+    <br>
+    <button class="print" style="padding: 5px;">Print</button> <br>
+    <div class="calculation">
+        <span>Total</span><br>
+        <span>GST</span> <br>
+        <span>Net Amount</span> <br>
+    </div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>  
+
+
+
+<!-- //Add multiple items with fields: Item Name, Quantity, Price per Unit.
+○ Optionally add a discount percentage per item. -->
