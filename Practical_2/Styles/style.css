@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: greenyellow;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #FFD700;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #FFA500;
+}
+
+.game {
+    text-align: center;
+}
+
+.game p {
+    margin: 10px 0;
+}
+
+.setInput {
+    padding: 8px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.GuessBtn {
+    padding: 8px 20px;
+    background-color: #FF6347;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+}
+
+.GuessBtn:hover {
+    background-color: #FF4500;
+}
+
+#feedback {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+#previousGuesses {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.result {
+    text-align: center;
+}
+
+.result button {
+    padding: 10px 20px;
+    background-color: #32CD32;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+.result button:hover {
+    background-color: #228B22;
+}

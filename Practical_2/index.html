@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Guess The Number</h2>
+        
+        <div id="menu" class="menu">
+            <p>Select Difficulty:</p>
+            <button onclick="startGame('easy')">Easy (1-10)</button>
+            <button onclick="startGame('medium')">Medium (1-100)</button>
+            <button onclick="startGame('hard')">Hard (1-1000)</button>
+        </div>
+
+        <div id="game" class="game" style="display:none;">
+            <p id="instructions"></p>
+            
+            <div>
+                <p>Guesses Left: <span id="guessesLeft">0</span></p>
+                <p>Attempts: <span id="attempts">0</span></p>
+            </div>
+
+            <div>
+                <input type="number" id="userGuess" class="setInput" placeholder="Enter your guess" onkeypress="handleKeyPress(event)">
+                <button class="GuessBtn" onclick="handleGuess()">Guess</button>
+            </div>
+
+            <p id="feedback"></p>
+            <p id="previousGuesses"></p>
+        </div>
+
+        <div id="result" class="result" style="display:none;">
+            <p id="resultMessage"></p>
+            <p id="resultDetails"></p>
+            <button onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="./Scripts/index.js"></script>
+</body>
+</html>
